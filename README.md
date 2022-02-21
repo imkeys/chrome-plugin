@@ -1,2 +1,4 @@
-# chrome-plugin-test
-谷歌插件开发
+# 相关资料
+
++ https://www.jianshu.com/p/51c650f98d9c
++ https://github.com/EmailThis/extension-boilerplate
