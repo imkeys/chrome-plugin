@@ -11,14 +11,6 @@ export const BASIC_ROUTES = [
   {
     path: '/popup',
     component: () => import(/* webpackChunkName: "popup" */ '@/views/popup/')
-  },
-  {
-    path: '/404',
-    component: () => import(/* webpackChunkName: "popup" */ '@/views/error-page/404')
-  },
-  {
-    path: '/500',
-    component: () => import(/* webpackChunkName: "popup" */ '@/views/error-page/500')
   }
 ]
 

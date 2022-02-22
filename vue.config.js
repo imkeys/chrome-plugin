@@ -40,11 +40,7 @@ module.exports = {
       filename: 'static/js/[name].js?hash=[hash:8]',
       chunkFilename: 'static/js/[name].js?hash=[hash:8]'
     },
-    externals: {
-      'vue': 'Vue',
-      'vue-router': 'VueRouter',
-      'axios': 'axios'
-    },
+    externals: {},
     devServer: {
       disableHostCheck: true,
       port: '9201',
