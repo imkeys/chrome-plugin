@@ -1,9 +1,44 @@
 <template>
-  <div>
-    <p>Hello world.</p>
-    <img src="https://aaravb.gallerycdn.vsassets.io/extensions/aaravb/chrome-extension-developer-tools/2.0.2/1642909994462/Microsoft.VisualStudio.Services.Icons.Default" width="50" alt="">
-    <router-link to="/main" target="_blank">
-      <span>打开一个页面</span>
-    </router-link>
+  <div class="popup">
+    <div class="inner">
+      <dl>
+
+      </dl>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+
+    }
+  },
+  created () {
+    this.getData()
+  },
+  methods: {
+    getData () {
+      this.$axios({
+        methods: 'get',
+        url: 'http://v.juhe.cn/toutiao/index',
+        params: {}
+      })
+    }
+  }
+}
+</script>
+
+<style lang="less" scoped>
+  .popup {
+    position: relative;
+    width: 400px;
+    background: #dd0000;
+    color: #ffffff;
+    .inner {
+      position: relative;
+      padding: 10px;
+    }
+  }
+</style>
