@@ -1,0 +1,13 @@
+{
+  "name": "Hello Extensions",
+  "description" : "Hello world Extension",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "favicon.png"
+  },
+  "icons": {
+    "250": "favicon.png"
+  }
+}
